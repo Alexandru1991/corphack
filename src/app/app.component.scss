@@ -1,0 +1,61 @@
+@import "../vars.scss";
+
+
+
+//--Navbar----//
+.navbar-default .navbar-nav > li > a{
+  font-size: 1.3em;
+  font-color:$primary-color;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  top: 2px;
+}
+.navbar{
+  margin-bottom: 0;
+  .navbar-brand{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    img{
+      height: 30px;
+    }
+  }
+  .navbar-header{
+    .navbar-toggle{
+      height: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 6px;
+    }
+  }
+}
+
+.glyphicon-large{
+  font-size: 1.2em;
+}
+
+//-----------------BANNER-----------///
+
+.banner{
+  padding:0;
+
+  .jumbotron{
+    background-image: url("../assets/bannerimage.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    height:600px;
+    color: $backround-color;
+  }
+
+}
+
+//------------Column1----------------/////
+.column1{
+  height:620px;
+}
