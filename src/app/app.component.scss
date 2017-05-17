@@ -43,14 +43,27 @@
 
 .banner{
   padding:0;
+  background-image: url("../assets/bannerimage.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  height:600px;
+  .text-banner{
 
-  .jumbotron{
-    background-image: url("../assets/bannerimage.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    border-radius: 0;
-    height:600px;
     color: $backround-color;
+    margin-top:100px;
+    margin-right:auto;
+    text-align: center;
+
+    h1{
+      font-size: 60px;
+      font-weight: bold;
+
+    }
+    h3{
+      font-weight: 100;
+    }
+
   }
 
 }
