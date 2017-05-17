@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   title = 'app works!';
 
   ngOnInit(): void {
+
     if ($('.navbar').length > 0) {
       $(window).on(
         "scroll load resize",  ()=> {
