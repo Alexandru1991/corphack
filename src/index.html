@@ -10,9 +10,25 @@
 
   <script src="node_modules/jquery/dist/jquery.slim.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script>
+    function checkScroll(){
+      //var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
+      if($(window).scrollTop() > 100){
+        $('.navbar').addClass("scrolled");
+      }else{
+        $('.navbar').removeClass("scrolled");
+      }
+    }
+
+    if($('.navbar').length > 0){
+      $(window).on("scroll load resize", function(){
+        checkScroll();
+      });
+    }
+  </script>
 </head>
-<body">
+<body>
 
   <app-root>Loading...</app-root>
 </body>
